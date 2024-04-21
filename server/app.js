@@ -48,10 +48,10 @@ mongoose
   })
   .then(() =>
     console.log(
-      "==============Mongodb Database Connected Successfully=============="
+      "Mongodb Database Connected Successfully"
     )
   )
-  .catch((err) => console.log("Database Not Connected !!!"));
+  .catch((err) => console.log("Database Not Connected!!!"));
 
 // Middleware
 app.use(morgan("dev"));
@@ -73,5 +73,5 @@ app.use("/api/customize", customizeRouter);
 // Run Server
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
-  console.log("Server is running on ", PORT);
+  console.log("Server is up and running on ", PORT);
 });
